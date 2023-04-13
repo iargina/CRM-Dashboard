@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.60901fd2.css",
-    "main.js": "/react-homework-template/static/js/main.783ecd42.js",
+    "main.css": "/react-homework-template/static/css/main.05345615.css",
+    "main.js": "/react-homework-template/static/js/main.5875567b.js",
     "static/media/discount.svg": "/react-homework-template/static/media/discount.5230029f4e637c534c143c4d95cf421f.svg",
     "static/media/wallet.svg": "/react-homework-template/static/media/wallet.25d824b57e5c5a753432296807e7285d.svg",
     "static/media/3d.svg": "/react-homework-template/static/media/3d.1ca4fd5b650bd0a4104c1a2789ca1171.svg",
@@ -13,11 +13,11 @@
     "static/media/search.svg": "/react-homework-template/static/media/search.d555a35800fec6f7c192.svg",
     "static/media/arrow.svg": "/react-homework-template/static/media/arrow.618c411d724ff239093f.svg",
     "static/media/arrowWhite.svg": "/react-homework-template/static/media/arrowWhite.ec3c4948e4917e74d585.svg",
-    "main.60901fd2.css.map": "/react-homework-template/static/css/main.60901fd2.css.map",
-    "main.783ecd42.js.map": "/react-homework-template/static/js/main.783ecd42.js.map"
+    "main.05345615.css.map": "/react-homework-template/static/css/main.05345615.css.map",
+    "main.5875567b.js.map": "/react-homework-template/static/js/main.5875567b.js.map"
   },
   "entrypoints": [
-    "static/css/main.60901fd2.css",
-    "static/js/main.783ecd42.js"
+    "static/css/main.05345615.css",
+    "static/js/main.5875567b.js"
   ]
 }
