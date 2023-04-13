@@ -1,10 +1,9 @@
 .table {
-  min-width: 60vw;
-  max-width: 64vw;
+  max-width: 100vw;
 }
 .tableHeadRow {
   display: inline-flex;
-  padding-left: 38px;
+  padding-left: 10px;
   position: relative;
   width: 100%;
   margin-bottom: 14px;
@@ -31,7 +30,7 @@
   background: #ffc5c5;
   border: 1px solid #df0404;
   border-radius: 4px;
-  width: 80px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +40,7 @@
   background: rgba(22, 192, 152, 0.38);
   border: 1px solid #00b087;
   border-radius: 4px;
-  width: 80px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,36 +52,37 @@
 .tableHead:first-child,
 .tableData:first-child {
   padding: 0;
-  width: 120px;
-  margin-right: 47px;
+  width: 10vw;
+  margin-right: 15px;
 }
 
 .tableHead:nth-child(2),
 .tableData:nth-child(2) {
-  width: 8%;
-  margin-right: 38px;
+  width: 10vw;
+  margin-right: 10px;
 }
 
 .tableHead:nth-child(3),
 .tableData:nth-child(3) {
-  width: 13%;
-  margin-right: 27px;
+  width: 13vw;
+  margin-right: 10px;
 }
 
 .tableHead:nth-child(4),
 .tableData:nth-child(4) {
-  width: 17%;
-  margin-right: 39px;
+  width: 13vw;
+  margin-right: 10px;
+  overflow-x: scroll;
 }
 
 .tableHead:nth-child(5),
 .tableData:nth-child(5) {
-  width: 13%;
-  margin-right: 55px;
+  width: 13vw;
+  margin-right: 10px;
 }
 .tableHead:nth-child(6) {
   text-align: center;
-  width: 8%;
+  width: 8vw;
 }
 .tableRow {
   display: inline-flex;
@@ -90,7 +90,7 @@
   width: 100%;
   margin-top: 24px;
   margin-bottom: 24px;
-  padding-left: 38px;
+  padding-left: 10px;
 }
 
 .tableRow::after {
@@ -102,7 +102,7 @@
   width: 91%;
 }
 .tableInfo {
-  padding-left: 38px;
+  padding-left: 10px;
   margin-top: 32px;
   color: #b5b7c0;
 }
@@ -112,13 +112,83 @@
 .tableDataActive,
 .tableHead {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 10px;
+  line-height: 17px;
   letter-spacing: -0.01em;
 }
 .tableFooter {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  max-width: 64vw;
+  max-width: 90vw;
+}
+
+@media (min-width: 1440px) {
+  .table {
+    min-width: 60vw;
+    max-width: 64vw;
+  }
+  .tableHeadRow {
+    padding-left: 38px;
+  }
+
+  .tableDataInactive {
+    width: 80px;
+  }
+  .tableDataActive {
+    width: 80px;
+  }
+
+  .tableHead:first-child,
+  .tableData:first-child {
+    width: 120px;
+    margin-right: 47px;
+  }
+
+  .tableHead:nth-child(2),
+  .tableData:nth-child(2) {
+    width: 8%;
+    margin-right: 38px;
+  }
+
+  .tableHead:nth-child(3),
+  .tableData:nth-child(3) {
+    width: 13%;
+    margin-right: 27px;
+  }
+
+  .tableHead:nth-child(4),
+  .tableData:nth-child(4) {
+    width: 17%;
+    margin-right: 39px;
+    overflow-x: unset;
+  }
+
+  .tableHead:nth-child(5),
+  .tableData:nth-child(5) {
+    width: 13%;
+    margin-right: 55px;
+  }
+  .tableHead:nth-child(6) {
+    text-align: center;
+    width: 8%;
+  }
+  .tableRow {
+    padding-left: 38px;
+  }
+
+  .tableInfo {
+    padding-left: 38px;
+  }
+  .tableInfo,
+  .tableData,
+  .tableDataInactive,
+  .tableDataActive,
+  .tableHead {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .tableFooter {
+    max-width: 64vw;
+  }
 }

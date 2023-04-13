@@ -1,13 +1,14 @@
 .main {
-  padding: 41px 0 0 71px;
-  height: 100vh;
+  padding: 41px 0 0 10px;
+  width: 100%;
 }
 
 .mainTitle {
   margin: 0 0 51px;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 32px;
+  padding-left: 10px;
   color: var(--color-black);
 }
 
@@ -19,10 +20,10 @@
 
 .input {
   box-sizing: border-box;
-  width: 216px;
+  width: 150px;
   height: 38px;
-  margin: 0 0 0 auto;
-  padding: 10px 0 10px 40px;
+  margin: 0 10px 0 auto;
+  padding: 10px 0 10px 35px;
   border-radius: 10px;
   border: none;
   background-color: #f9fbff;
@@ -43,12 +44,12 @@
   width: 24px;
   height: 24px;
   top: 7px;
-  left: -208px;
+  left: -150px;
 }
 
 .tableHeader {
   display: flex;
-  padding: 30px 0 0 38px;
+  padding: 30px 0 0 10px;
   margin-bottom: 40px;
 }
 
@@ -61,15 +62,15 @@
 .tableHeaderTitle {
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 18px;
+  line-height: 29px;
   color: var(--color-black);
 }
 
 .tableHeaderText {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 10px;
+  line-height: 17px;
   color: #16c098;
 }
 
@@ -77,4 +78,42 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+
+@media (min-width: 1440px) {
+  .main {
+    padding: 41px 0 0 71px;
+    width: auto;
+    height: 100vh;
+  }
+
+  .mainTitle {
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 0;
+  }
+
+  .input {
+    width: 216px;
+    margin: 0 0 0 auto;
+    padding: 10px 0 10px 40px;
+  }
+
+  .span::before {
+    left: -208px;
+  }
+
+  .tableHeader {
+    padding: 30px 0 0 38px;
+  }
+
+  .tableHeaderTitle {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .tableHeaderText {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }

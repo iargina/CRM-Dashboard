@@ -1,13 +1,13 @@
 .navigation {
-  width: 306px;
+  width: 100%;
   box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
-  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
 }
 .navigation,
 .list,
 .managerInfo {
   display: flex;
-  flex-direction: column;
   gap: 0;
 }
 
@@ -16,9 +16,9 @@
   flex-wrap: nowrap;
   box-sizing: border-box;
   gap: 8px;
-  width: 306px;
   padding: 36px 83px 0 28px;
   margin-bottom: 53px;
+  justify-content: center;
 }
 
 .title {
@@ -48,27 +48,20 @@
   letter-spacing: -0.01em;
   color: #9197b3;
 }
-.navText::after,
-.textIsActive::after {
-  content: url('assets/icons/arrow.svg');
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
 
 .textIsActive {
   color: var(--color-text-active);
 }
-.textIsActive::after {
-  content: url('assets/icons/arrowWhite.svg');
-}
 
 .list {
   list-style: none;
-  gap: 16px;
+  gap: 5px;
   padding-left: 28px;
   padding-right: 28px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 .listItem,
 .listItemIsActive {
@@ -92,7 +85,8 @@
   display: flex;
   gap: 12px;
   padding-left: 28px;
-  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 76px;
 }
 
@@ -106,6 +100,9 @@
   letter-spacing: 0.01em;
   color: var(--color-gray);
 }
+.managerInfo {
+  flex-direction: column;
+}
 .managerPosition,
 .managerName,
 .list,
@@ -113,4 +110,43 @@
 .navText,
 .textIsActive {
   margin: 0;
+}
+
+@media (min-width: 1440px) {
+  .navigation {
+    width: 306px;
+    height: 100vh;
+  }
+  .navigation,
+  .list,
+  .managerInfo {
+    flex-direction: column;
+  }
+
+  .header {
+    width: 306px;
+  }
+
+  .navText::after,
+  .textIsActive::after {
+    content: url('assets/icons/arrow.svg');
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .textIsActive::after {
+    content: url('assets/icons/arrowWhite.svg');
+  }
+
+  .list {
+    gap: 16px;
+  }
+
+  .managerWrap {
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 76px;
+  }
 }

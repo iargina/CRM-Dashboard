@@ -5,14 +5,16 @@ export const Table = ({ customers }) => {
   return (
     <section className={css.tableSection}>
       <table className={css.table}>
-        <tr className={css.tableHeadRow}>
-          <th className={css.tableHead}>Customer Name</th>
-          <th className={css.tableHead}>Company</th>
-          <th className={css.tableHead}>Phone Number</th>
-          <th className={css.tableHead}>Email</th>
-          <th className={css.tableHead}>Country</th>
-          <th className={css.tableHead}>Status</th>
-        </tr>
+        <thead>
+          <tr className={css.tableHeadRow}>
+            <th className={css.tableHead}>Customer Name</th>
+            <th className={css.tableHead}>Company</th>
+            <th className={css.tableHead}>Phone Number</th>
+            <th className={css.tableHead}>Email</th>
+            <th className={css.tableHead}>Country</th>
+            <th className={css.tableHead}>Status</th>
+          </tr>
+        </thead>
         {customers &&
           customers.map(customer => {
             const { name, company, phone, email, country, isActive } = customer;
