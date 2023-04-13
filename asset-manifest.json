@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.05345615.css",
-    "main.js": "/react-homework-template/static/js/main.5875567b.js",
-    "static/media/discount.svg": "/react-homework-template/static/media/discount.5230029f4e637c534c143c4d95cf421f.svg",
-    "static/media/wallet.svg": "/react-homework-template/static/media/wallet.25d824b57e5c5a753432296807e7285d.svg",
-    "static/media/3d.svg": "/react-homework-template/static/media/3d.1ca4fd5b650bd0a4104c1a2789ca1171.svg",
-    "static/media/message.svg": "/react-homework-template/static/media/message.5d23912a887f9edc9d9f8d957ec960e6.svg",
-    "static/media/user.svg": "/react-homework-template/static/media/user.27617add0f452c671fec310dc74fcb18.svg",
-    "static/media/setting.svg": "/react-homework-template/static/media/setting.10388eedf1d18f866bca9b73b83a62c9.svg",
-    "index.html": "/react-homework-template/index.html",
-    "static/media/key.svg": "/react-homework-template/static/media/key.153a0eb179be0548729792a4f21fc52e.svg",
-    "static/media/search.svg": "/react-homework-template/static/media/search.d555a35800fec6f7c192.svg",
-    "static/media/arrow.svg": "/react-homework-template/static/media/arrow.618c411d724ff239093f.svg",
-    "static/media/arrowWhite.svg": "/react-homework-template/static/media/arrowWhite.ec3c4948e4917e74d585.svg",
-    "main.05345615.css.map": "/react-homework-template/static/css/main.05345615.css.map",
-    "main.5875567b.js.map": "/react-homework-template/static/js/main.5875567b.js.map"
+    "main.css": "/CRM-Dashboard/static/css/main.b4d600c7.css",
+    "main.js": "/CRM-Dashboard/static/js/main.a3a80e51.js",
+    "static/media/discount.svg": "/CRM-Dashboard/static/media/discount.5230029f4e637c534c143c4d95cf421f.svg",
+    "static/media/wallet.svg": "/CRM-Dashboard/static/media/wallet.25d824b57e5c5a753432296807e7285d.svg",
+    "static/media/3d.svg": "/CRM-Dashboard/static/media/3d.1ca4fd5b650bd0a4104c1a2789ca1171.svg",
+    "static/media/message.svg": "/CRM-Dashboard/static/media/message.5d23912a887f9edc9d9f8d957ec960e6.svg",
+    "static/media/user.svg": "/CRM-Dashboard/static/media/user.27617add0f452c671fec310dc74fcb18.svg",
+    "static/media/setting.svg": "/CRM-Dashboard/static/media/setting.10388eedf1d18f866bca9b73b83a62c9.svg",
+    "index.html": "/CRM-Dashboard/index.html",
+    "static/media/key.svg": "/CRM-Dashboard/static/media/key.153a0eb179be0548729792a4f21fc52e.svg",
+    "static/media/search.svg": "/CRM-Dashboard/static/media/search.d555a35800fec6f7c192.svg",
+    "static/media/arrow.svg": "/CRM-Dashboard/static/media/arrow.618c411d724ff239093f.svg",
+    "static/media/arrowWhite.svg": "/CRM-Dashboard/static/media/arrowWhite.ec3c4948e4917e74d585.svg",
+    "main.b4d600c7.css.map": "/CRM-Dashboard/static/css/main.b4d600c7.css.map",
+    "main.a3a80e51.js.map": "/CRM-Dashboard/static/js/main.a3a80e51.js.map"
   },
   "entrypoints": [
-    "static/css/main.05345615.css",
-    "static/js/main.5875567b.js"
+    "static/css/main.b4d600c7.css",
+    "static/js/main.a3a80e51.js"
   ]
 }
