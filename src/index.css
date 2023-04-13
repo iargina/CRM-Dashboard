@@ -1,6 +1,5 @@
 @import-normalize; /* bring in normalize.css styles */
 :root {
-  --font-medium: 500;
   --color-text: #838383;
   --color-text-active: #ffffff;
   --color-primary: #5932ea;
