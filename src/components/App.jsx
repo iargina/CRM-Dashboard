@@ -1,5 +1,6 @@
 import { Navigation } from './Navigation/Navigation';
 import { Table } from './Table/Table';
+import { Product } from './Product/Product';
 export const App = () => {
   return (
     <div
@@ -9,7 +10,7 @@ export const App = () => {
       }}
     >
       <Navigation />
-      <Table />
+      <Product />
     </div>
   );
 };

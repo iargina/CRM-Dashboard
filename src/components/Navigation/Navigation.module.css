@@ -1,14 +1,20 @@
 .navigation {
-  display: flex;
-  flex-direction: column;
-
   width: 306px;
   box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
   height: 100vh;
 }
+.navigation,
+.list,
+.managerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
 
 .header {
   display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
   gap: 8px;
   width: 306px;
   padding: 36px 83px 0 28px;
@@ -16,24 +22,27 @@
 }
 
 .title {
-  margin: 0;
+  display: flex;
+  gap: 4px;
   font-weight: 600;
   font-size: 26px;
   line-height: 39px;
   letter-spacing: 0.01em;
+  align-items: baseline;
 }
 
 .text {
-  font-weight: 500;
+  font-weight: var(--font-medium);
   font-size: 10px;
   line-height: 15px;
   letter-spacing: -0.01em;
-  color: #838383;
+  color: var(--color-text);
 }
 
-.navText {
-  margin: 0;
-  font-weight: 500;
+.navText,
+.textIsActive,
+.managerName {
+  font-weight: var(--font-medium);
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
@@ -49,12 +58,7 @@
 }
 
 .textIsActive {
-  margin: 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: -0.01em;
-  color: #ffffff;
+  color: var(--color-text-active);
 }
 .textIsActive::after {
   content: url('assets/icons/arrowWhite.svg');
@@ -62,14 +66,12 @@
 
 .list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
   gap: 16px;
-  margin: 0;
   padding-left: 28px;
   padding-right: 28px;
 }
-.listItem {
+.listItem,
+.listItemIsActive {
   display: flex;
   gap: 14px;
   padding: 11px 15px 11px 11px;
@@ -77,24 +79,13 @@
   position: relative;
 }
 .listItemIsActive {
-  display: flex;
-  gap: 14px;
-  background: #5932ea;
+  background: var(--color-primary);
   border-radius: 8px;
-  padding: 11px 15px 11px 11px;
-  align-items: center;
-  position: relative;
 }
-.listIcon {
-  width: 24px;
-  height: 24px;
-  color: #000;
-  fill: currentColor;
-}
+.listIcon,
 .listIconIsActive {
   width: 24px;
   height: 24px;
-  fill: #ffffff;
 }
 
 .managerWrap {
@@ -104,23 +95,22 @@
   margin-top: auto;
   margin-bottom: 76px;
 }
-.managerInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
+
 .managerName {
-  margin: 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.01em;
+  color: var(--color-black);
 }
 .managerPosition {
-  margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--color-gray);
+}
+.managerPosition,
+.managerName,
+.list,
+.title,
+.navText,
+.textIsActive {
+  margin: 0;
 }

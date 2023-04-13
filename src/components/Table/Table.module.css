@@ -1,9 +1,6 @@
-.tableSection {
-  padding-left: 71px;
-  margin-top: 150px;
-}
 .table {
-  max-width: 968px;
+  min-width: 60vw;
+  max-width: 64vw;
 }
 .tableHeadRow {
   display: inline-flex;
@@ -21,20 +18,12 @@
   width: 100%;
 }
 .tableHead {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: -0.01em;
   color: #b5b7c0;
 }
 .tableData,
 .tableDataInactive,
 .tableDataActive {
   width: 100%;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: -0.01em;
   color: #292d32;
 }
 .tableDataInactive {
@@ -115,12 +104,21 @@
 .tableInfo {
   padding-left: 38px;
   margin-top: 32px;
+  color: #b5b7c0;
+}
+.tableInfo,
+.tableData,
+.tableDataInactive,
+.tableDataActive,
+.tableHead {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
-
   letter-spacing: -0.01em;
-
-  color: #b5b7c0;
+}
+.tableFooter {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 64vw;
 }

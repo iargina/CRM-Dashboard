@@ -1,4 +1,14 @@
 @import-normalize; /* bring in normalize.css styles */
+:root {
+  --font-medium: 500;
+  --color-text: #838383;
+  --color-text-active: #ffffff;
+  --color-primary: #5932ea;
+  --color-gray: #757575;
+  --color-black: #000;
+  --color-icon-active: #ffffff;
+  --padding-list-item: 11px 15px 11px 11px;
+}
 
 body {
   margin: 0;

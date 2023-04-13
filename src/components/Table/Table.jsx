@@ -1,13 +1,7 @@
-import { useState, useEffect } from 'react';
-import data from 'data/data.json';
 import css from './Table.module.css';
+import { Pagination } from 'components/Pagination/Pagination';
 
-export const Table = () => {
-  const [customersToShow, setCustomer] = useState(data);
-  console.log(customersToShow);
-  useEffect(() => {
-    setCustomer(data);
-  }, []);
+export const Table = ({ customers }) => {
   return (
     <section className={css.tableSection}>
       <table className={css.table}>
@@ -19,8 +13,8 @@ export const Table = () => {
           <th className={css.tableHead}>Country</th>
           <th className={css.tableHead}>Status</th>
         </tr>
-        {customersToShow &&
-          customersToShow.map(customer => {
+        {customers &&
+          customers.map(customer => {
             const { name, company, phone, email, country, isActive } = customer;
             return (
               <tr className={css.tableRow}>
@@ -37,7 +31,10 @@ export const Table = () => {
             );
           })}
       </table>
-      <p className={css.tableInfo}>Showing data 1 to 8 of 256K entries</p>
+      <div className={css.tableFooter}>
+        <p className={css.tableInfo}>Showing data 1 to 8 of 256K entries</p>
+        <Pagination />
+      </div>
     </section>
   );
 };
